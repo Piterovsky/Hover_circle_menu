@@ -1,0 +1,107 @@
+
+.content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    /* border:2px solid red; */
+    width:350px;
+    height:350px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.home{
+    background-color: blue;
+    padding:20px 16px;
+    color:white;
+    border-radius:50%;
+    max-width:70px;
+    position:relative;
+    z-index:100;
+}
+.hov{
+    width:0; 
+    height:0;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+}
+.btn{
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+    background-color: blue;
+    padding:30px 35px;
+    color:white;
+    border-radius:50%;
+    /* display:none; */
+
+    transition-duration: 0.5s;
+    z-index:99;
+    
+}
+.home:hover .hov{
+    width:320px;
+    height:300px
+}
+
+@keyframes szesc{
+    /* 0% {transform:translate(-160px, -35px);}
+    40% {transform:translate(-160px, -45px);}
+    75% {transform:translate(-160px, -25px);}
+    100% {transform:translate(-160px, -35px);} */
+
+    0% {transform:translate(-160px, -45px);}
+    100% {transform:translate(-160px, -25px);}
+}
+
+.home:hover .btn6{
+    transform:translate(-160px, -35px);
+
+}
+.btn6:hover{
+    animation-name: szesc;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.home:hover .btn6{
+    /* display:block; */
+    transform:translate(-160px, -35px);
+}
+.home:hover .btn5{
+    transform:translate(-100px, 70px)
+}
+
+.home:hover .btn4{
+    transform:translate(30px, 70px)
+}
+
+.home:hover .btn3{
+    transform:translate(80px, -35px)
+}
+
+.home:hover .btn2{
+    transform:translate(30px, -140px)
+}
+
+.home:hover .btn1{
+    transform:translate(-100px, -140px)
+}
+
+
+
+
+
+
+
+
+
+
+
